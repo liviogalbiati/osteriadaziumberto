@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menù – Osteria da Zi' Umberto, cucina romana a Trastevere</title>
+<meta name="description" content="Il menù dell'Osteria da Zi' Umberto (Osteria da Zi Umberto): antipasti, primi romani, secondi, contorni e dolci, con allergeni e filtri vegetariano, vegano, senza glutine.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Menù – Osteria da Zi' Umberto">
+<meta property="og:description" content="Antipasti, primi romani, secondi, contorni e dolci.">
+<meta property="og:locale" content="it_IT">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="menu" class="page-menu">
+<header id="site-header"></header>
+<main id="main">
+  <div class="container menu-hero">
+    <p class="eyebrow" data-i18n="menu.eyebrow"></p>
+    <h1 data-i18n="menu.title">Menù</h1>
+    <p class="notice" data-i18n="menu.banner"></p>
+
+    <div class="menu-tools kraft-panel">
+      <div>
+        <p class="label" style="margin:0 0 8px" data-i18n="menu.filters"></p>
+        <div class="filter-row" id="filters">
+          <button type="button" class="filter" data-filter="vegetarian" aria-pressed="false" data-i18n="menu.f.veg"></button>
+          <button type="button" class="filter" data-filter="vegan" aria-pressed="false" data-i18n="menu.f.vegan"></button>
+          <button type="button" class="filter" data-filter="glutenfree" aria-pressed="false" data-i18n="menu.f.gf"></button>
+        </div>
+        <p class="small" id="filter-note" style="margin:8px 0 0" role="status"></p>
+        <p class="small muted" style="margin:6px 0 0" data-i18n="menu.filter.hint"></p>
+      </div>
+      <div>
+        <p class="label" style="margin:0" data-i18n="menu.legend"></p>
+        <ul class="legend" id="legend"></ul>
+        <p class="small" style="margin:8px 0 0" data-i18n="menu.legend.ph"></p>
+      </div>
+    </div>
+  </div>
+
+  <nav class="catbar" data-i18n-attr="aria-label:menu.catnav"><ul id="catnav"></ul></nav>
+
+  <div class="container" id="menu-body"></div>
+
+  <div class="container">
+    <p class="menu-footnote" data-i18n="menu.frozen"></p>
+    <p class="legal" data-i18n="menu.legal"></p>
+    <div class="btn-row"><a class="btn btn--primary" href="prenota.html" data-i18n="menu.cta.book"></a><a class="btn" href="asporto.html" data-i18n="menu.cta.take"></a></div>
+    <p>&nbsp;</p>
+  </div>
+</main>
+<footer id="site-footer"></footer>
+<div id="actionbar"></div>
+<script src="js/config.js"></script>
+<script src="js/menu-data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>

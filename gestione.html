@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Area ristoratore (demo) – Osteria da Zi' Umberto</title>
+<meta name="description" content="Dimostrazione dell'area riservata al ristoratore: prenotazioni del giorno, messaggi automatici, ordini, buoni e modifica del menù.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="admin">
+<header id="site-header"></header>
+<main id="main">
+  <div class="demo-banner" role="note" data-i18n="admin.banner"></div>
+  <div class="container page-head">
+    <h1 data-i18n="admin.title">Area ristoratore (demo)</h1>
+    <p data-i18n="admin.lead"></p>
+  </div>
+  <div class="container admin-grid" style="padding-bottom:48px">
+    <section class="panel wide" aria-labelledby="a-res">
+      <h2 id="a-res" data-i18n="admin.res.title"></h2>
+      <p class="muted" id="a-res-sub"></p>
+      <div class="table-wrap"><table id="a-res-table"></table></div>
+    </section>
+
+    <section class="panel" aria-labelledby="a-auto">
+      <h2 id="a-auto" data-i18n="admin.auto.title"></h2>
+      <p class="muted" data-i18n="admin.auto.lead"></p>
+      <div id="a-auto-list"></div>
+    </section>
+
+    <section class="panel" aria-labelledby="a-menu">
+      <h2 id="a-menu" data-i18n="admin.menu.title"></h2>
+      <p class="muted" data-i18n="admin.menu.lead"></p>
+      <div class="field"><label for="a-dish" data-i18n="admin.menu.dish"></label><select id="a-dish"></select></div>
+      <div class="form-grid form-grid--2">
+        <div class="field"><label for="a-price" data-i18n="admin.menu.price"></label><input id="a-price" type="number" min="0" step="0.5" inputmode="decimal"></div>
+        <div class="field"><label for="a-avail" data-i18n="admin.menu.avail"></label><select id="a-avail"><option value="yes" data-i18n="admin.menu.yes"></option><option value="no" data-i18n="admin.menu.no"></option></select></div>
+      </div>
+      <div class="field"><label for="a-desc" data-i18n="admin.menu.desc"></label><input id="a-desc" type="text"></div>
+      <p class="label" data-i18n="admin.menu.preview"></p>
+      <div id="a-preview" class="card" style="background:var(--kraft)"></div>
+    </section>
+
+    <section class="panel" aria-labelledby="a-ord">
+      <h2 id="a-ord" data-i18n="admin.orders.title"></h2>
+      <div class="table-wrap"><table id="a-orders"></table></div>
+    </section>
+
+    <section class="panel" aria-labelledby="a-gift">
+      <h2 id="a-gift" data-i18n="admin.gifts.title"></h2>
+      <div class="table-wrap"><table id="a-gifts"></table></div>
+    </section>
+
+    <section class="online-box wide" aria-labelledby="a-online">
+      <h2 id="a-online" data-i18n="admin.online.title"></h2>
+      <p data-i18n="admin.online.lead"></p>
+      <ul>
+        <li data-i18n="admin.online.1"></li>
+        <li data-i18n="admin.online.2"></li>
+        <li data-i18n="admin.online.3"></li>
+        <li data-i18n="admin.online.4"></li>
+      </ul>
+    </section>
+  </div>
+</main>
+<footer id="site-footer"></footer>
+<div id="actionbar"></div>
+<script src="js/config.js"></script>
+<script src="js/menu-data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

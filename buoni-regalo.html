@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buoni regalo – Osteria da Zi' Umberto, Trastevere</title>
+<meta name="description" content="Regala una cena all'Osteria da Zi' Umberto (Osteria da Zi Umberto), a Trastevere: scegli l'importo, scrivi un messaggio, invia il buono per email o stampalo.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Buoni regalo – Osteria da Zi' Umberto">
+<meta property="og:description" content="Regala una cena in osteria.">
+<meta property="og:locale" content="it_IT">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="vouchers">
+<header id="site-header"></header>
+<main id="main">
+  <div class="container page-head">
+    <p class="eyebrow" data-i18n="gift.eyebrow"></p>
+    <h1 data-i18n="gift.title">Buoni regalo</h1>
+    <p data-i18n="gift.lead"></p>
+    <p class="small muted" data-i18n="gift.demo"></p>
+  </div>
+
+  <div class="container print-area" style="padding-bottom:40px">
+    <div class="voucher-wrap">
+      <div class="form-card no-print" id="gift-form-card"></div>
+      <div class="voucher-preview voucher-print">
+        <h2 class="no-print" style="font-size:1.25rem" data-i18n="gift.preview"></h2>
+        <div class="voucher" id="voucher">
+          <div class="voucher__lights"><div data-lights="strip"></div></div>
+          <div class="voucher__body">
+            <span class="logo logo--voucher"><span class="logo__band"><span class="logo__text">OSTERIA DA “ZI’ UMBERTO”</span></span></span>
+            <p class="voucher__label" data-i18n="gift.v.label"></p>
+            <p class="voucher__amount" id="v-amount"></p>
+            <p class="voucher__names" id="v-names"></p>
+            <p class="voucher__msg" id="v-msg"></p>
+            <p class="voucher__code" id="v-code"></p>
+            <p class="voucher__fine" data-i18n="gift.v.fine"></p>
+          </div>
+          <div class="voucher__lights voucher__lights--bot"><div data-lights="strip"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--dark no-print">
+    <div class="container" style="max-width:760px">
+      <h2 data-i18n="gift.xmas.title"></h2>
+      <p class="lead" data-i18n="gift.xmas.p"></p>
+    </div>
+  </section>
+</main>
+<footer id="site-footer"></footer>
+<div id="actionbar"></div>
+<script src="js/config.js"></script>
+<script src="js/menu-data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+<script src="js/voucher.js"></script>
+</body>
+</html>
